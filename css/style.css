@@ -10,24 +10,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .immagine{
     width: 60%;
     height: 70%;
-    background-color: aqua;
-    position: relative;
 }
 
-.item{
+
+.img img{
     width: 100%;
     height: 100%;
 }
 
-.item img{
-    width: 100%;
+.img{
     height: 100%;
-    /* object-fit: cover; */
+    display: none;
+}
+
+.img.active{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
 
 .up , .down{
@@ -38,16 +43,18 @@
     border-radius: 50%;
     background-color: lightgray;
     color: rgb(91, 89, 89);
+    cursor: pointer;
 }
+
 
 .up{
     position: absolute;
-    top: 0;
+    top: 15%;
     left: 50%;
 }
 
 .down{
     position: absolute;
-    bottom: 0;
+    bottom: 15%;
     left: 50%;
 }
