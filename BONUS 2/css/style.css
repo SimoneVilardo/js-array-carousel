@@ -65,13 +65,13 @@
 }
 
 .item{
-    height: calc(100% / 5 - 10px);
+    height: calc(100% / 5);
     filter: brightness(0.5);
-    padding: 5px;
 }
 
 .item.filter{
     filter: brightness(1);
+    border: 2px solid white;
 }
 
 .item img{
